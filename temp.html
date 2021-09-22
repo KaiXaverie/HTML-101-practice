@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        body {
+            background-color: rgba(138, 163, 196, 0.534);
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to HTML 101!</h1>
+    <h2>A begginers guide to coding</h2>
+    <!--Letter a stands for anchor, href stands for hypertext reference-->
+    <a href="https://google.com/" target="_blank">
+        This is going to go to Google
+    </a>
+    <!--If this file is deleted or removed it goes to 404-->
+    <a href="second_page.html">
+        This goes to the second page
+    </a>
+    <p>
+        The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. <br>Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+    </p>
+    <!--Horizontal rule is the block element-->
+    <hr>
+
+    <h3>This is an example of elements nesting</h3>
+
+    <!--This is parent element-->
+    <div>
+        This is a div element
+        <!--This is child element-->
+        <div>
+            This is a nested element
+            <!--This is grandchild element-->
+            <p>This is a paragraph</p>
+        </div>
+        </div>
+    </div>
+
+    <p>
+        <!--Bold, italics and underline are inline elements, while p is block element-->
+        <b>HTML</b> contains several elements for <i>defining text</i> with a <u>special meaning</u>.
+    </p>
+    <p>
+        <b>
+            <i>
+                <u>
+                    Lorem ipsum dolor sit amet
+                </u>
+            </i>
+        </b>
+    </p>
+
+    <!--Div is a block element, it will take up entire width of the screen -->
+    <div>
+        This has no special meaning
+    </div>
+    <div>This is a second line</div>
+
+    <h3>Images</h3>
+    <!--We nested an image inside of an anchor tag-->
+    <a href="second_page.html">
+        <img src="photo.jpg" width="500" alt="Show me">
+    </a>
+    <h3>Lists</h3>
+    <!--Two elements that are nested inside of our ordered list-->
+    <ol>
+        <li>Something in here</li>
+        <li>Make a second bullet point</li>
+    </ol>
+    <!--Three elements are nested inside of our unordered list-->
+    <ul>
+        <li>Point #1</li>
+        <li>Point #2</li>
+        <li>Point #3</li>
+    </ul>
+    <script src="test_javascript.js"></script>
+
+</body>
+</html>
