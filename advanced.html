@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 201</title>
+    <!--Rel means relation (what is it), type can be jpg, png etc-->
+    <link rel="shortcut icon" href="images/favicons/icony.png" type="image/png">
+    <style>
+        body {
+            background-color: rgba(138, 163, 196, 0.534);
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="top">Welcome to HTML 201</h1>
+    <a href="#bottom">Scroll to bottom of page</a><br>
+    <a href="temp.html">Go to HTML 101</a>
+
+    <p>
+        <span style="text-decoration: underline;">Lorem ipsum dolor sit amet</span> consectetur, adipisicing elit. Enim recusandae quibusdam vitae quis voluptates neque officiis animi nam sint! Sint minus consequatur officia fugiat repellendus. Esse perferendis quas ratione error.
+    </p>
+    
+    <p>
+        <span style="text-decoration: underline;">Lorem ipsum dolor sit amet</span> consectetur, adipisicing elit. Enim recusandae quibusdam vitae quis voluptates neque officiis animi nam sint! Sint minus consequatur officia fugiat repellendus. Esse perferendis quas ratione error.
+    </p>
+    
+    <p>
+        <span style="text-decoration: underline;">Lorem ipsum dolor sit amet</span> consectetur, adipisicing elit. Enim recusandae quibusdam vitae quis voluptates neque officiis animi nam sint! Sint minus consequatur officia fugiat repellendus. Esse perferendis quas ratione error.
+    </p>
+    <h3>Insert an image from other folder</h3>
+    <img src="images/pccolor.jpg" height="500" alt="computer">
+
+    <h2>Table rows and cells</h2>
+    <table border="1" width="100%">
+        <!--Table row-->
+        <tr>
+            <!--Table data cell--> 
+            <td>First cell here</td>
+            <td>Second cell</td>
+            <td>Third cell</td>
+        </tr>
+        <tr>
+            <td>Cell 2</td>
+            <td>Cell 2.1</td>
+            <td>Cell 2.2</td>
+        </tr>
+        <tr>
+            <td>Cell 3</td>
+            <td>Cell 3.1</td>
+            <td>Cell 3.2</td>
+        </tr>
+    </table>
+    <h2>Merging table cells and rows</h2>
+    <table border="1" width="100%">
+        <tbody>
+            <tr>
+                <!--Column span, it will take 3 columns now-->
+                <td colspan="3">1</td>
+            </tr>
+            <tr>
+                <!--We want to merge first column in the second row and first column in the third row-->
+                <td rowspan="2">1</td>
+                <!--We want to merge second and third column in the second row-->
+                <td colspan="2">2</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Table and cell widths</h3>
+    <!--Table is 100% width-->
+    <table border="1" width="100%">
+        <tr>
+            <td colspan="2">Welcome to my website</td>
+        </tr>
+        <tr>
+            <!--Cell should be 20% of that table width-->
+            <td width="20%">
+                <h3>Navigation</h3>
+            </td>
+            <td>
+                <h3>Content</h3>
+            </td>
+        </tr>
+    </table>
+    <h3>Table headers</h3>
+    <table border="1" width="100%">
+        <tr>
+            <!--Table header is centered and bold-->
+            <th colspan="2">Welcome to my website</th>
+        </tr>
+        <tr>
+            <td width="20%">
+                <h3>Navigation</h3>
+            </td>
+            <td>
+                <h3>Content</h3>
+            </td>
+        </tr>
+    </table>
+    <div id="bottom">
+        <a href="#top">Back to top</a>
+    </div>
+    
+</body>
+</html>
