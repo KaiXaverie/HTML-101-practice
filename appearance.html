@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appearance</title>
+    <link rel="shortcut icon" href="images/favicons/icony.png" type="image/png">
+</head>
+<body>
+    <h1 class="colorText">Welcome to Intermediate HTML</h1>
+    <!--Everything inside style attribute is called inline CSS-->
+    <div style="padding: 30px; color: white; background-color: rgba(0, 0, 0, 0.247);">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nisi reprehenderit quae, voluptas vitae veniam veritatis eaque commodi unde vero optio expedita, molestiae, quibusdam blanditiis tempora inventore accusantium consequuntur illo.</div>
+    <!--We can use HTML class to apply CSS-->
+    <style>
+        .padding {
+        padding: 30px;
+        color:rgb(255, 255, 255) ;
+        background-color: rgba(216, 112, 147, 0.733);
+        }
+        .colorText{
+            color:grey;
+        }
+        .uppercase {
+            text-transform: uppercase;
+        }
+        #testingId {
+            border: 5px solid rgba(0, 0, 0, 0.247);
+        }
+        
+    </style>
+    <!--We add attribute called class and name of it inside-->
+    <div class="padding uppercase">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, molestias voluptatibus repellendus reprehenderit cum ex, odio veritatis odit natus deleniti necessitatibus dignissimos sed rerum illum impedit, et eius aspernatur sunt?
+    </div>
+    <div class="padding">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, molestias voluptatibus repellendus reprehenderit cum ex, odio veritatis odit natus deleniti necessitatibus dignissimos sed rerum illum impedit, et eius aspernatur sunt?
+    </div>
+    <!--There should only be one copy of ID and one ID per elem-->
+    <div id="testingId">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam alias cum earum perspiciatis illum voluptates magnam culpa omnis, error unde commodi impedit temporibus qui in ipsam tempore, iure voluptas at.
+    </div>
+    <h3 class="colorText">Code formatting</h3>
+    <!--Pre means preformatted text, we don't need br, it applies mono spacing-->
+    <pre class="colorText">
+        Some stuff here &lt;b&gt;This is bold&lt;/b&gt;
+        Second line here
+    </pre>
+    <p class="colorText">
+        <!--Code is not whitespace sensitive, while pre is-->
+        <code>Lorem ipsum dolor sit amet</code> consectetur adipisicing elit. A earum libero unde dolores aut aspernatur nostrum aperiam tempora sapiente qui! Repudiandae pariatur praesentium, harum ullam tempore nobis porro impedit voluptatem?
+    </p>
+    <!--HTML entities start with & and end with ;-->
+    <h3 class="colorText">HTML entities</h3>
+    <p class="colorText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quia recusandae tempora reiciendis libero temporibus nulla. &lt;b&gt;This is bold&lt;/b&gt;</p>
+    <!--Forms are how we send data to a server-->
+    <a href="forms.html">Go to forms</a>
+
+
+    <div>
+        <!--We can use sup to place it little bit higher or sub to place it little bit lower-->
+        &copy;<sub>2022</sub> 
+        <!--Sub means subscript and sup menas superscript-->
+    </div>
+</body>
+</html>
